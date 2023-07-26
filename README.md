@@ -2,8 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-同じ親ディレクトリにバックエンド（https://github.com/ncdcdev/recruit-frontend）と
-フロントエンド（https://github.com/natsukiete/recruit-task）を Cloneしてください。
+同じ親ディレクトリにバックエンド（[https://github.com/ncdcdev/recruit-frontend]）と
+フロントエンド（[https://github.com/natsukiete/recruit-task]）を Cloneしてください。
 
 バックエンドを起動後、フロントエンドを起動してください。
 
