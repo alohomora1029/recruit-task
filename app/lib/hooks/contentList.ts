@@ -21,7 +21,6 @@ export function useContentList() {
 export function usePostContentList() {
 
   const postContentList = async (request:PostContentList[]) => {
-    console.log(request)
     try {
      await axios.post(`${API_HOST}/content`,request)
     } catch (error) {

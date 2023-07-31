@@ -32,6 +32,8 @@ export default function TitleEdit() {
 
   const handleSave = () => {
     putIdContentList(inputId, { title: input, body: hoverData[0].body });
+    contentList();
+    setInput('');
   };
 
   useEffect(() => {

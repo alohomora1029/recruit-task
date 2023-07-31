@@ -42,7 +42,7 @@ export default function Menu() {
     (async () => {
       await contentList();
     })();
-  }, [isEditing, editData, listData]);
+  }, [isEditing, editData,input]);
 
   useEffect(() => {
     setData(listData);

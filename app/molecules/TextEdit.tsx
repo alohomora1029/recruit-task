@@ -8,6 +8,7 @@ import {
 } from "../lib/hooks/IdContentList";
 import CancelButton from "../atoms/CancelButton";
 import SaveButton from "../atoms/SaveButton";
+import { useContentList } from "../lib/hooks/contentList";
 
 export default function TextEdit() {
   const [data, setData] = useState<contentList[]>([]);
@@ -15,6 +16,8 @@ export default function TextEdit() {
   const [input, setInput] = useState("");
   const [inputId, setInputId] = useState<number>(0);
   const hoverData = useRecoilValue(hoverList);
+
+  const {contentList} = useContentList();
 
   const { putIdContentList, data: putData } = usePutIdContentList();
   const { getIdContentList, bodyData } = useGetIdContentList();
@@ -26,6 +29,8 @@ export default function TextEdit() {
   };
   const handleSave = () => {
     putIdContentList(inputId, { title: hoverData[0].title, body: input });
+    contentList();
+    setInput("")
   };
 
   useEffect(() => {
