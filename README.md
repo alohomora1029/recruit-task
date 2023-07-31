@@ -2,14 +2,16 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+同じ親ディレクトリに[バックエンド](https://github.com/ncdcdev/recruit-frontend)と
+[フロントエンド](https://github.com/natsukiete/recruit-task)を Cloneしてください。
+
+バックエンドを起動後、フロントエンドを起動してください。
+
 First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
